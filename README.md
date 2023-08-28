@@ -1,7 +1,7 @@
 # Seoul Air Pollution Analysis
 
 ## Project Overview
-Time Series Analysis of the Air Pollution in Seoul South Korea 
+This case study is a time series analysis of the air pollution in Seoul, South Korea. 
 
 ## Objectives
 

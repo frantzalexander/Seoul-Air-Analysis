@@ -52,6 +52,7 @@ baseline[Create Baseline Model]
 iterate[Iterate]
 hyper[Hyperparameter Tuning]
 eval[Evaluate]
+walk[Walk-Forward Validation]
 communicate[Communicate Results]
 finish(((END)))
 start --> import
@@ -66,7 +67,8 @@ model --> baseline
 baseline --> iterate
 iterate --> hyper
 hyper --> eval
-eval --> communicate
+eval --> walk
+walk --> communicate
 communicate --> finish
 
 

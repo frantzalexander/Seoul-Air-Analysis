@@ -36,5 +36,38 @@ The Baseline Mean Absolute Error of the model was 8.08.
 
 The Mean Absolute Error from the Test Data with walk-forward validation was 8.76.
 
+## Process
+```mermaid
+flowchart TD
+start(((START)))
+import[Import Dataset]
+resample[Resample & Forward Fill Missing Values]
+explore[Explore Dataset]
+rolling[Create Weekly Rolling Average Visualization]
+acf[Create ACF Visualization]
+pacf[Create PACF Visualization]
+split[Split Dataset: Training & Test]
+model[Model Building]
+baseline[Create Baseline Model]
+iterate[Iterate]
+hyper[Hyperparameter Tuning]
+eval[Evaluate]
+communicate[Communicate Results]
+finish(((END)))
+start --> import
+import --> resample
+resample --> explore
+explore --> rolling
+rolling --> acf
+acf --> pacf
+pacf --> split
+split --> model
+model --> baseline
+baseline --> iterate
+iterate --> hyper
+hyper --> eval
+eval --> communicate
+communicate --> finish
+
 
 
